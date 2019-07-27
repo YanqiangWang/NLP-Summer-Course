@@ -1,4 +1,3 @@
-
 ### 作业任务：
 
 使用98年人民日报语料库进行中文分词训练及测试。
@@ -14,6 +13,10 @@ Jupyter Notebook, Python3
 ### 作业方法：
 
 实现了前向匹配算法的分词功能。
+
+### 源码地址：
+
+https://github.com/YanqiangWang/NLP-Summer-Course
 
 ### 作业步骤：
 
@@ -101,13 +104,6 @@ for sentence in tqdm_notebook(train_data):
 ```
 
 
-    HBox(children=(IntProgress(value=0, max=18229), HTML(value='')))
-
-
-    
-    
-
-
 ```python
 # 设置单词最大长度
 max_dic_len = 5
@@ -160,12 +156,6 @@ for sentence in tqdm_notebook(test_text):
     resultfile.write(' '.join(words) + '\n')
 ```
 
-
-    HBox(children=(IntProgress(value=0, max=4558), HTML(value='')))
-
-
-    
-    
 
 ### 性能评价
 
@@ -235,13 +225,6 @@ for i in tqdm_notebook(range(list_num)):
 ```
 
 
-    HBox(children=(IntProgress(value=0, max=4527), HTML(value='')))
-
-
-    
-    
-
-
 ```python
 print("生成结果词的个数：", result_cnt)
 print("验证集结果词个数：", test_cnt)
@@ -260,4 +243,3 @@ print("F度量：", f)
     查准率： 0.8301748374626603
     查全率： 0.8602558266569555
     F度量： 0.8449476884556917
-    

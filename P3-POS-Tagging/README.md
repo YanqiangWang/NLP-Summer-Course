@@ -15,6 +15,10 @@ Jupyter Notebook, Python3
 
 使用简单的统计词频的方法，对于单词的词性做出预测。暂未使用N-gram语言规则。
 
+### 博客地址：
+
+https://www.cnblogs.com/yanqiang/p/11259468.html
+
 ### 作业步骤：
 
 1.处理语料库：删除段前标号。
@@ -106,9 +110,6 @@ for sentence in tqdm_notebook(train_data):
 ```
 
 
-    HBox(children=(IntProgress(value=0, max=891535), HTML(value='')))
-
-
 4.选择概率最大的词性。
 
 
@@ -143,9 +144,6 @@ for sentence in tqdm_notebook(test_data):
                 words[1] = line[1]
         resultfile.write(words[0] + ' ' + word[1] + '\n')
 ```
-
-
-    HBox(children=(IntProgress(value=0, max=222884), HTML(value='')))
 
 
 ### 性能评价：准确率
